@@ -1,0 +1,104 @@
+.special {
+	padding-top: 99px;
+	padding-bottom: 129px;
+	margin-bottom: 119px;
+	background: #f6f7fb;
+	@media (max-width: 1300px) {
+		@include adaptiv(padding-top, 99, 50, 1300, 320);
+		@include adaptiv(padding-bottom, 129, 50, 1300, 320);
+		@include adaptiv(margin-bottom, 119, 50, 1300, 320);
+	}
+	// .special__container
+	&__container {
+	}
+	// .special__title
+	&__title {
+		margin-bottom: 77px;
+		@media (max-width: 768px) {
+			margin-bottom: 50px;
+		}
+		@media (max-width: 576px) {
+			margin-bottom: 40px;
+		}
+		@media (max-width: 420px) {
+			margin-bottom: 30px;
+		}
+	}
+	// .special__grid
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 40px;
+		grid-row-gap: 40px;
+		@media (max-width: 1600px) {
+			grid-column-gap: 30px;
+			grid-row-gap: 30px;
+		}
+		@media (max-width: 992px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 576px) {
+			grid-column-gap: 20px;
+			grid-row-gap: 20px;
+		}
+		@media (max-width: 470px) {
+			grid-column-gap: 15px;
+		}
+		@media (max-width: 420px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	// .special__col
+	&__col {
+	}
+	// .special__item
+	&__item {
+		height: 100%;
+	}
+}
+
+.item-special {
+	display: flex;
+	flex-direction: column;
+	padding: 23px 40px;
+	background: #ffffff;
+	box-shadow: 0px 4px 20px rgba(0, 44, 106, 0.1);
+	min-height: 200px;
+	transition: 0.3s;
+	@media (max-width: 1600px) {
+		padding: 23px 25px;
+	}
+	@media (max-width: 500px) {
+		padding: 20px 15px;
+	}
+	@media (max-width: 420px) {
+		padding: 20px 20px;
+		min-height: 180px;
+	}
+	&:hover {
+		box-shadow: none;
+	}
+	// .item-special__img
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+		margin-right: auto;
+		img {
+			max-width: 46px;
+			max-height: 46px;
+		}
+	}
+	// .item-special__title
+	&__title {
+		font-size: 18px;
+		line-height: 1.67;
+		@media (max-width: 1300px) {
+			@include adaptiv(font-size, 18, 15, 1300, 421);
+		}
+		@media (max-width: 420px) {
+			font-size: 16px;
+		}
+	}
+}

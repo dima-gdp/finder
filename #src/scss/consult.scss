@@ -1,0 +1,150 @@
+.consult {
+	padding-top: 99px;
+	padding-bottom: 100px;
+	margin-bottom: 36px;
+	background: #f6f7fb;
+	@media (max-width: 1300px) {
+		@include adaptiv(padding-top, 99, 50, 1300, 320);
+		@include adaptiv(padding-bottom, 100, 50, 1300, 320);
+	}
+	// .consult__container
+	&__container {
+	}
+	// .consult__flex
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 769px) {
+			flex-direction: column;
+		}
+	}
+	// .consult__left
+	&__left {
+		margin-right: 60px;
+		height: 100%;
+		flex: 0 0 40%;
+		position: relative;
+		@media (max-width: 850px) {
+			margin-right: 40px;
+		}
+		@media (max-width: 769px) {
+			flex: 0 0 auto;
+			margin: 0 auto;
+			order: 1;
+			max-width: 450px;
+			width: 100%;
+		}
+	}
+	// .consult__img
+	&__img {
+		position: relative;
+		padding-bottom: 100%;
+		border-radius: 100%;
+		overflow: hidden;
+		& > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			font-family: "object-fit: cover; object-position: center;";
+		}
+	}
+	// .consult__decor
+	&__decor {
+		position: absolute;
+		bottom: -9%;
+		left: 0;
+		width: 55.4%;
+		animation: transform-swing 8000ms linear 0ms infinite normal;
+	}
+	// .consult__right
+	&__right {
+		flex: 1 1 auto;
+		max-width: 535px;
+		@media (max-width: 769px) {
+			order: 0;
+			flex: 0 0 auto;
+			max-width: none;
+			margin-bottom: 50px;
+		}
+		@media (max-width: 420px) {
+			margin-bottom: 40px;
+		}
+	}
+	// .consult__title
+	&__title {
+		margin-bottom: 37px;
+		@media (max-width: 420px) {
+			margin-bottom: 25px;
+		}
+	}
+	// .consult__subtitle
+	&__subtitle {
+		margin-bottom: 39px;
+		font-size: 16px;
+		line-height: 1.62;
+		color: #000000;
+	}
+	// .consult__polit
+	&__polit {
+		margin-top: 26px;
+		font-size: 14px;
+		line-height: 1.71;
+		color: #000000;
+		@media (max-width: 768px) {
+			max-width: 500px;
+			margin: 26px auto 0px auto;
+		}
+		@media (max-width: 576px) {
+			font-size: 13px;
+		}
+		@media (max-width: 420px) {
+			font-size: 12px;
+		}
+		a {
+			color: #000000;
+			transition: 0.3s;
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+	.wpcf7 {
+		@media (max-width: 768px) {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+	}
+	.wpcf7-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.wpcf7-form-control-wrap {
+		margin-bottom: 27px;
+		@media (max-width: 420px) {
+			margin-bottom: 17px;
+		}
+		input {
+			display: block;
+			width: 100%;
+			height: 55px;
+			padding: 10px 20px;
+			font-size: 16px;
+			line-height: 1.62;
+			color: #000000;
+			&::placeholder {
+				color: #000;
+			}
+		}
+	}
+
+	.wpcf7-submit {
+		&:hover {
+			background: linear-gradient(95deg, #24b969 0.18%, #059347 100%);
+		}
+	}
+}

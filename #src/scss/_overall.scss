@@ -1,0 +1,190 @@
+.container {
+	max-width: 1460px;
+	width: 100%;
+	padding: 0 60px;
+	margin: 0 auto;
+	@media (max-width: 993px) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	@media (max-width: 768px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.container-big {
+	max-width: 1920px;
+	width: 100%;
+	padding-left: 300px;
+	margin: 0 auto;
+	@media (max-width: 1400px) {
+		padding-left: 280px;
+	}
+	@media (max-width: 1300px) {
+		padding-left: 0;
+	}
+}
+
+html,
+body {
+	font-size: 18px;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0 0 0 0);
+}
+
+.disable-scroll {
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.help-img {
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.flex-help {
+	overflow: hidden !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+	height: 0 !important;
+	max-height: 0 !important;
+	min-height: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+.green-btn {
+	min-height: 55px;
+	background: linear-gradient(95deg, #059347 0.18%, #24b969 100%);
+	font-size: 16px;
+	line-height: 1.87;
+	text-transform: uppercase;
+	color: #ffffff;
+	@media (max-width: 500px) {
+		min-height: 45px;
+	}
+	@media (max-width: 420px) {
+		font-size: 14px;
+	}
+}
+
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.28;
+	color: #000000;
+	@media (max-width: 1200px) {
+		@include adaptiv(font-size, 36, 22, 1200, 320);
+	}
+}
+
+div.wpcf7-response-output,
+div.wpcf7-validation-errors,
+div.wpcf7 .ajax-loader {
+	display: none !important;
+}
+
+span.wpcf7-not-valid-tip {
+	display: none;
+}
+
+.wpcf7-not-valid {
+	border: 1px solid red !important;
+}
+
+.alertify-notifier {
+	z-index: 99997;
+}
+
+.wpcf7-not-valid {
+	border-color: red !important;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+[data-src="#modal-call"] {
+	cursor: pointer;
+}
+[data-src="#modal"] {
+	cursor: pointer;
+}
+[data-src="#modal-polit"] {
+	cursor: pointer;
+}
+
+// Анимации
+
+@keyframes gallery {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes transform-swing {
+	0% {
+		-webkit-transform: rotateX(0deg);
+	}
+	20% {
+		-webkit-transform: rotateY(0deg);
+	}
+	20% {
+		-webkit-transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(180deg);
+	}
+	80% {
+		-webkit-transform: rotateY(0deg);
+	}
+	100% {
+		-webkit-transform: rotateX(0deg);
+	}
+}
+@keyframes transform-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+	}
+}
