@@ -40,6 +40,9 @@ body {
 
 .main {
 	flex: 1 1 auto;
+	&--bg {
+		background: #f6f7fb;
+	}
 }
 
 .visually-hidden {
@@ -113,6 +116,16 @@ body {
 	}
 }
 
+.h {
+	font-weight: 700;
+	font-size: 52px;
+	line-height: 1.15;
+	color: #000000;
+	@media (max-width: 1200px) {
+		@include adaptiv(font-size, 52, 24, 1200, 320);
+	}
+}
+
 div.wpcf7-response-output,
 div.wpcf7-validation-errors,
 div.wpcf7 .ajax-loader {
@@ -129,6 +142,9 @@ span.wpcf7-not-valid-tip {
 
 .alertify-notifier {
 	z-index: 99997;
+}
+.ajs-message {
+	font-size: 16px !important;
 }
 
 .wpcf7-not-valid {

@@ -1,0 +1,19 @@
+@@include('aside.html')
+@@include('header.html')
+
+<div class="main">
+	<section class="contacts container-big">
+		<div class="contacts__container container">
+			@@include('breadcrumbs.html')
+			<h1 class="contacts__title h">Контакты</h1>
+			<div class="contacts__items">
+				<a class="contacts__item" href="tel:">(8172) 58-04-78</a>
+				<p class="contacts__item contacts__adress">г. Вологда, ул. Карла Маркса, д. 31</p>
+				<a class="contacts__item" href="mail:to">izyskatel_35@inbox.ru</a>
+			</div>
+		</div>
+		<div class="contacts__map" id="map"></div>
+	</section>
+</div>
+
+@@include('footer.html')
