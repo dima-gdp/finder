@@ -19,6 +19,7 @@
 	a {
 		border: 1px solid #495a72;
 		color: #495a72;
+		user-select: none;
 	}
 
 	// .prev,
@@ -55,6 +56,7 @@
 		font-weight: 300;
 		font-size: 18px;
 		line-height: 1.56;
+		user-select: none;
 		&:not(:last-child) {
 			margin-right: 15px;
 			@media (max-width: 955px) {

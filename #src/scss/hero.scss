@@ -6,8 +6,8 @@
 	background-size: cover;
 	background-position: center;
 	@media (max-width: 1300px) {
-		@include adaptiv(padding-top, 120, 50, 1300, 320);
-		@include adaptiv(padding-bottom, 150, 50, 1300, 320);
+		@include adaptiv(padding-top, 120, 40, 1300, 320);
+		@include adaptiv(padding-bottom, 150, 40, 1300, 320);
 		@include adaptiv(margin-bottom, 98, 50, 1300, 320);
 	}
 	// .hero__container

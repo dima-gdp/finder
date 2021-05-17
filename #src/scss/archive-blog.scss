@@ -3,7 +3,7 @@
 	&__container {
 		padding-bottom: 100px;
 		@media (max-width: 1200px) {
-			@include adaptiv(padding-bottom, 100, 50, 1200, 320);
+			@include adaptiv(padding-bottom, 100, 40, 1200, 320);
 		}
 	}
 	// .blogs__title

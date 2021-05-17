@@ -1,9 +1,13 @@
 .footer {
 	padding-top: 36px;
 	padding-bottom: 47px;
-	border: 1px solid #dce4f0;
+
 	@media (max-width: 420px) {
 		padding-bottom: 30px;
+	}
+
+	&--border {
+		border-top: 1px solid #dce4f0;
 	}
 	// .footer__container
 	&__container {

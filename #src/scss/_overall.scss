@@ -43,6 +43,9 @@ body {
 	&--bg {
 		background: #f6f7fb;
 	}
+	&--footer + .footer {
+		border-top: 1px solid #dce4f0;
+	}
 }
 
 .visually-hidden {

@@ -1,0 +1,19 @@
+.page {
+	// .contacts__container
+	&__container {
+	}
+	// .contacts__title
+	&__title {
+		margin-bottom: 74px;
+		@media (max-width: 1200px) {
+			@include adaptiv(margin-bottom, 74, 35, 1200, 320);
+		}
+	}
+	// .contacts__items
+	&__content {
+		margin-bottom: 141px;
+		@media (max-width: 1200px) {
+			@include adaptiv(margin-bottom, 141, 35, 1200, 320);
+		}
+	}
+}

@@ -16,6 +16,9 @@
 	// .reviews__grid
 	&__grid {
 		margin-bottom: 56px;
+		@media (max-width: 420px) {
+			margin-bottom: 50px;
+		}
 	}
 	// .reviews__item
 	&__item {
@@ -88,7 +91,9 @@
 	// .reviews__text
 	&__text {
 		& > * {
-			margin-bottom: 0 !important;
+			&:last-child {
+				margin-bottom: 0 !important;
+			}
 		}
 	}
 	// .reviews__pagination

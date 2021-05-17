@@ -55,8 +55,8 @@
 		padding-bottom: 159px;
 		background: #f6f7fb;
 		@media (max-width: 1200px) {
-			@include adaptiv(padding-bottom, 159, 50, 1200, 320);
-			@include adaptiv(padding-top, 120, 50, 1200, 320);
+			@include adaptiv(padding-bottom, 159, 40, 1200, 320);
+			@include adaptiv(padding-top, 120, 40, 1200, 320);
 		}
 	}
 	// .columns__content
@@ -74,8 +74,9 @@
 	// .services__container
 	&__container {
 		padding-bottom: 147px;
+		border-bottom: 1px solid #dce4f0;
 		@media (max-width: 1200px) {
-			@include adaptiv(padding-bottom, 147, 50, 1200, 320);
+			@include adaptiv(padding-bottom, 147, 40, 1200, 320);
 		}
 	}
 	// .services__row
